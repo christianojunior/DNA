@@ -44,4 +44,3 @@ def print_info(modules):
         partNumber=module['partNumber'],
         moduleType=module['isFieldReplaceable']))
 
-#__name__ == 'library'
