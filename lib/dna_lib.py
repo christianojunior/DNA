@@ -16,8 +16,8 @@ def create_url(controller_url, port, path):
     return "https://{0}:{1}/api/v1/{2}".format(controller_url, port, path)
 
 def get_url(apipath):
-    url = create_url("sandboxdnac.cisco.com", 443, apipath)
-    token = get_token("sandboxdnac.cisco.com", 443, "devnetuser", "Cisco123!")
+    url = create_url("sandboxdnac2.cisco.com", 443, apipath)
+    token = get_token("sandboxdnac2.cisco.com", 443, "devnetuser", "Cisco123!")
     headers = {"X-auth-token": token["token"]}
     try:
         response = requests.get(url, headers=headers, verify=False)
